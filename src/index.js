@@ -4,6 +4,7 @@ import './index.css';
 import GroupImage from './Photos/Group.svg';
 import OurImage from './Photos/OurImage.svg';
 import TextImage from './Photos/TextImage.svg';
+import DesginSVG from './Photos/DesginSVG.svg';
 
 const Header = () => {
   const [selectedId, setSelectedId] = useState('Home');
@@ -74,10 +75,10 @@ const Header = () => {
 };
 
 
-
 const Body = () => {
   return (
     <div className='IntroductoryText'>
+      <img id="DesginSVG" src={DesginSVG} alt="Desgin SVG" />
       <img id="GroupImage" src={GroupImage} alt="Group Image" />
       <img id="OurImage" src={OurImage} alt="Our Image" />
       <img id="TextImage" src={TextImage} alt="Text Image" />

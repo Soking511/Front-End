@@ -25,8 +25,9 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: white;
+
 }
 
 .header {
@@ -105,13 +106,11 @@ body {
 }
 
 .IntroductoryText{
-  /* position: relative; */
   margin-top:290px;
   margin-left:100px;
   float: left;
   justify-content: center;
   font-size: 32px;
-  /* align-items: center; */
 }
 
 .IntroductoryText #firstSpan{
@@ -241,6 +240,15 @@ form{
   letter-spacing: -0.02em;
 }
 
+#DesginSVG{
+  position: absolute;
+  background-color: #546e7a;
+  margin-left: 87px;
+  top: 0;
+  width: 100%;
+  top: -10px;
+  background-color: white;
+}
 
 .sketchOne{
 

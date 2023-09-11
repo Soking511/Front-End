@@ -83,6 +83,7 @@ const Body = () => {
       <img id="OurImage" src={OurImage} alt="Our Image" />
       <img id="TextImage" src={TextImage} alt="Text Image" />
       <div className="RectangleForm">
+      <h2>Sign Up Now</h2>
         <form action="/action_page.php">
           <div className="input-container">
             <input
@@ -142,10 +143,6 @@ const Body = () => {
     </div>
   );
 };
-
-
-
-
 
 
 const app = (

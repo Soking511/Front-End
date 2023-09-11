@@ -3,25 +3,26 @@
   src: url('./Fonts/Georgia.ttf') format('truetype');
 }
 
-/* Default styles for all screen sizes */
-.sketchOne{
-  position:absolute;
+@font-face {
+  font-family: 'Orbitron-Regular';
+  src: url('./Fonts/Orbitron-Regular.ttf') format('truetype');
 }
+
+
+@font-face {
+  font-family: 'AverageSans-Regular';
+  src: url('./Fonts/AverageSans-Regular.ttf') format('truetype');
+}
+
 
 /* Media query for tablets and larger screens */
 @media screen and (min-width: 768px) {
-  .sketchOne{
-    top:50px;
-    right:-120px;
-  }
+
 }
 
 /* Media query for desktops and larger screens */
 @media screen and (min-width: 1024px) {
-  .sketchOne{
-    top:50px;
-    right:-120px;
-  }
+
 }
 
 body {
@@ -50,7 +51,7 @@ body {
   font-size: 21px;
   font-weight: bold;
   border-radius: 5px;
-  font-family: 'Georgia', serif;
+  font-family: 'AverageSans-Regular', serif;
   font-weight: 500;
   text-shadow: #00000023 0.05px 0.05px 0.05px;
 }
@@ -145,9 +146,9 @@ body {
 .RectangleForm{
   box-sizing: border-box;
   position: absolute;
-  width: 512px;
-  height: 685px;
-  top: 120px;
+  width: 432px;
+  height: 555px;
+  top: 230px;
   right: 135px;
   background: rgba(217, 217, 217, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.7);
@@ -170,7 +171,6 @@ body {
 }
 
 
-
 .CheckBoxRules{
   font-size:16px;
   color: #546e7a;
@@ -186,8 +186,12 @@ body {
   height: 30px;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 80px;
+  border-radius: 20px;
   background: rgba(255, 255, 255, 0.8);
+}
+
+.text-input:focus {
+  outline: none;
 }
 
 form{
@@ -195,7 +199,7 @@ form{
 }
 
 #fname{
-  margin-top:90px;
+  margin-top:85px;
 }
 
 #lname{
@@ -204,6 +208,13 @@ form{
 
 #lname, #fname{
   width: 35%;
+}
+
+.IntroductoryText .RectangleForm h2{
+  color: white;
+  /* border: 1 solid black; */
+  /* position: relative; */
+  margin-top: -100px;
 }
 
 .SubmitRegister{
@@ -216,7 +227,9 @@ form{
   border-radius: 80px;
   border-color: #00000000;
   font-size: 25px;
-  margin: 20px 50px ;
+  margin: 20px 50px;
+  font-family: 'Orbitron-Regular', serif;
+  cursor: pointer;
 
 }
 
